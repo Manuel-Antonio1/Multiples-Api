@@ -13,7 +13,16 @@ const mostrardata = async () => {
     try{
     const data =  await getRickMorty();
     const tarjetas = data.results.map(personaje =>`
-        
+            <article>
+            <div>
+              <spam>${personaje.id}</span>
+              <img src="${personaje.image}" alt="${personaje.name}">
+            </div>
+            <div>
+              <h3>${personaje.name}</h3>
+              <span>Tipos :${personaje.species}</span>
+            </div>
+            </article>        
         
     `).join("");
     container.innerHTML= tarjetas;
