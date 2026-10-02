@@ -3,3 +3,49 @@
     padding: 0;
     margin: 0;
 }
+/* Contenedor principal alineado horizontalmente */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+}
+
+/* Título de la izquierda */
+header div h1 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Menú con forma de cápsula a la derecha */
+.nav-index {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  padding: 10px 30px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  background-color: #ffffff;
+}
+
+/* Estilos para los enlaces */
+.nav-index li a {
+  text-decoration: none;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.nav-index li a:hover {
+  opacity: 0.6;
+}
